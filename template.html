@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first template</title>
+</head>
+<body>
+    <h1>My Webpage</h1>
+
+    <!-- Include the navigation menu -->
+    {{ include('navigation.html') }}
+
+    <!-- Display variables -->
+    <p>{{ a_variable }}</p>
+    <p>{{ another_variable|upper }}</p>
+
+    <!-- Loop through a list of people -->
+    <ul>
+    {% for item in people %}
+        <li>{{ item.FirstName }} {{ item.Surname }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
